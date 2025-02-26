@@ -5685,11 +5685,11 @@ AccelerationStructureInstanceKHR :: struct {
 	using _: bit_field u32 {
 		instanceCustomIndex: u32 | 24,
 		mask:                u32 | 8,
-	}
+	},
 	using _: bit_field u32 {
 		instanceShaderBindingTableRecordOffset: u32                      | 24,
 		flags:                                  GeometryInstanceFlagsKHR | 8,
-	}
+	},
 	accelerationStructureReference: u64,
 }
 
@@ -6757,11 +6757,11 @@ AccelerationStructureMatrixMotionInstanceNV :: struct {
 	using _: bit_field u32 {
 		instanceCustomIndex: u32 | 24,
 		mask:                u32 | 8,
-	}
+	},
 	using _: bit_field u32 {
 		instanceShaderBindingTableRecordOffset: u32                      | 24,
 		flags:                                  GeometryInstanceFlagsKHR | 8,
-	}
+	},
 	accelerationStructureReference: u64,
 }
 
@@ -6790,11 +6790,11 @@ AccelerationStructureSRTMotionInstanceNV :: struct {
 	using _: bit_field u32 {
 		instanceCustomIndex: u32 | 24,
 		mask:                u32 | 8,
-	}
+	},
 	using _: bit_field u32 {
 		instanceShaderBindingTableRecordOffset: u32                      | 24,
 		flags:                                  GeometryInstanceFlagsKHR | 8,
-	}
+	},
 	accelerationStructureReference: u64,
 }
 
@@ -8386,7 +8386,7 @@ ClusterAccelerationStructureBuildTriangleClusterInfoNV :: struct {
 		positionTruncateBitCount: u32 | 6,
 		indexType:                u32 | 4,
 		opacityMicromapIndexType: u32 | 4,
-	}
+	},
 	baseGeometryIndexAndGeometryFlags: ClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV,
 	indexBufferStride: u16,
 	vertexBufferStride: u16,
@@ -8408,7 +8408,7 @@ ClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV :: struct {
 		positionTruncateBitCount: u32 | 6,
 		indexType:                u32 | 4,
 		opacityMicromapIndexType: u32 | 4,
-	}
+	},
 	baseGeometryIndexAndGeometryFlags: ClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV,
 	indexBufferStride: u16,
 	vertexBufferStride: u16,
@@ -8427,7 +8427,7 @@ ClusterAccelerationStructureInstantiateClusterInfoNV :: struct {
 	using _: bit_field u32 {
 		geometryIndexOffset: u32 | 24,
 		reserved:            u32 | 8,
-	}
+	},
 	clusterTemplateAddress: DeviceAddress,
 	vertexBuffer: StridedDeviceAddressNV,
 }
