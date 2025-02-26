@@ -609,7 +609,7 @@ class Bitfield:
                     (field.name + ":").ljust(max_name + 1),
                     field.type.ljust(max_type),
                     field.bitsize))
-            f.write(('\t' * indent) + "}\n")
+            f.write(('\t' * indent) + "}" + ("," if name is None else "") + "\n")
 
 def parse_structs(f):
     data = re.findall(r"typedef (struct|union) Vk(\w+?) {(.+?)} \w+?;", src, re.S)
@@ -692,7 +692,7 @@ def parse_structs(f):
                     type_.write(f, None, indent=1, justify=True)
                 else:
                     f.write("\t{} {},\n".format((name + ":").ljust(max_len + 1), type_))
-            f.write(f"}}{',' if has_anon_bitfield else ''}\n\n")
+            f.write("}\n\n")
 
     f.write("// Opaque structs\n")
     f.write(OPAQUE_STRUCTS)
