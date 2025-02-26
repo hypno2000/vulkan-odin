@@ -692,7 +692,7 @@ def parse_structs(f):
                     type_.write(f, None, indent=1, justify=True)
                 else:
                     f.write("\t{} {},\n".format((name + ":").ljust(max_len + 1), type_))
-            f.write("}\n\n")
+            f.write(f"}}{',' if has_anon_bitfield else ''}\n\n")
 
     f.write("// Opaque structs\n")
     f.write(OPAQUE_STRUCTS)
