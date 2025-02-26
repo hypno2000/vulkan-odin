@@ -691,7 +691,7 @@ def parse_structs(f):
                     # Inject an anonymous bitfield into the struct
                     type_.write(f, None, indent=1, justify=True)
                 else:
-                    f.write("\t{} {}\n".format((name + ":").ljust(max_len + 1), type_))
+                    f.write("\t{} {},\n".format((name + ":").ljust(max_len + 1), type_))
             f.write("}\n\n")
 
     f.write("// Opaque structs\n")
