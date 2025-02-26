@@ -5688,7 +5688,7 @@ AccelerationStructureInstanceKHR :: struct {
 	},
 	using _: bit_field u32 {
 		instanceShaderBindingTableRecordOffset: u32                      | 24,
-		flags:                                  GeometryInstanceFlagsKHR | 8,
+		flags:                                  GeometryInstanceFlagKHR  | 8,
 	},
 	accelerationStructureReference: u64,
 }
@@ -6760,7 +6760,7 @@ AccelerationStructureMatrixMotionInstanceNV :: struct {
 	},
 	using _: bit_field u32 {
 		instanceShaderBindingTableRecordOffset: u32                      | 24,
-		flags:                                  GeometryInstanceFlagsKHR | 8,
+		flags:                                  GeometryInstanceFlagKHR  | 8,
 	},
 	accelerationStructureReference: u64,
 }
@@ -6793,7 +6793,7 @@ AccelerationStructureSRTMotionInstanceNV :: struct {
 	},
 	using _: bit_field u32 {
 		instanceShaderBindingTableRecordOffset: u32                      | 24,
-		flags:                                  GeometryInstanceFlagsKHR | 8,
+		flags:                                  GeometryInstanceFlagKHR  | 8,
 	},
 	accelerationStructureReference: u64,
 }
