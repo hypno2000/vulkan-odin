@@ -20749,7 +20749,7 @@ typedef struct VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV {
 } VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV;
 
 typedef struct VkClusterAccelerationStructureBuildTriangleClusterInfoNV {
-    uint32_t clusterID;
+    uint32_t                                                         clusterID;
     VkClusterAccelerationStructureClusterFlagsNV                     clusterFlags;
     uint32_t                                                         triangleCount:9;
     uint32_t                                                         vertexCount:9;
